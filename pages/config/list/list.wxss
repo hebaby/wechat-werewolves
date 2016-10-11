@@ -1,0 +1,106 @@
+.list-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../image/background.png);
+    background-size: cover;
+}
+.role-area {
+    width: 100%;
+    height: 75%;
+}
+.role-list{
+    padding-top: 10%;
+}
+.button-area {
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,1);
+    position: relative;
+}
+.role-item{
+    display: inline-block;
+    width: 25%;
+    height: 110px;
+}
+
+.list-image-area {
+    background-image: url(../../../image/photoframe.png);
+    background-size: cover;
+    width: 80px;
+    height: 84px;
+    margin: 10px auto;
+    text-align:center;
+    position: relative;
+}
+.list-image {
+    width: 70px;
+    height: 70px;
+    margin-top: 11px;
+    border-radius: 5px;
+}
+.cover-image {
+    position: absolute;
+    opacity: .8;
+    z-index: 2;
+    left: 5px;
+    width: 71px;
+    height: 71px;
+}
+.list-image-name{
+    z-index: 3;
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    width: 72px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(14,14,38);
+}
+.list-number {
+    z-index: 3;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(14,14,38);
+    border-radius: 3px;
+    left: 3px;
+    top: 10px;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.exit-button {
+    background-image: url(../../../image/Button/exit_game.png);
+    background-size: cover;
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 5%;
+    margin-top: -20px;
+}
+.restart-button {
+    background-image: url(../../../image/Button/restart_game.png);
+    background-size: cover;
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 5%;
+    margin-top: -20px;
+}
+.preview-character {
+    background-image: url(../../../image/Button/check_identity.png);
+    background-size: cover;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top:-25px;
+}

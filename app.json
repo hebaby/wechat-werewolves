@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/config/index",
+    "pages/game/index",
+    "pages/index/index",
+    "pages/info/index",
+    "pages/logs/logs",
+    "pages/config/assign/index",
+    "pages/config/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "狼人之夜",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/config/index",
+      "iconPath": "image/config.png",
+      "selectedIconPath": "image/config.png",
+      "text": "配置"
+    }, {
+      "pagePath": "pages/config/assign/index",
+      "iconPath": "image/game.png",
+      "selectedIconPath": "image/game.png",
+      "text": "游戏"
+    }, {
+      "pagePath": "pages/info/index",
+      "iconPath": "image/contact.png",
+      "selectedIconPath": "image/game.png",
+      "text": "介绍"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

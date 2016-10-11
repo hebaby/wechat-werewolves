@@ -1,0 +1,18 @@
+<view class="assign-container">
+    <view class="assign-title">依次传阅 查看身份</view>
+    <view class="assign-image-area">
+        <image src="{{imagePath}}animals{{assignIndex}}.png" class="assign-image"></image>
+        <text class="assign-number">{{assignIndex}}</text>
+    </view>
+    <view class="assign-character">
+        <text wx:if="{{!isWatch}}">你的身份是?</text>
+        <text wx:if="{{isWatch}}">{{roleName}}</text>
+    </view>
+    <view class="check-identify" wx:if="{{!isWatch}}" bindtap="checkIdentify"></view>
+    <view class="next-one" wx:if="{{isWatch&&!isEnd}}" bindtap="nextOne"></view>
+    <view class="return-judge"  wx:if="{{isEnd}}" bindtap="returnJudge"></view>
+    <view class="popup-tips" wx:if="{{isShow}}">
+        <image src="{{rolePath}}{{roleSrc}}" class="popup-tips-image"></image>
+        <view class="popup-tips-text">{{roleName}}</view>
+    </view>
+</view>

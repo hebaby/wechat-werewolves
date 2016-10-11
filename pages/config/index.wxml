@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="config-cover" wx:if="{{isCover}}">
+    <view class="tips-area" bindtap="cancelCover">
+        <image class="tips-image" src="{{imagePath}}{{coverPath}}"></image>
+        <view class="tips-name">{{coverText}}</view>
+    </view>
+    <view class="number-area" data-value="{{coverId}}">
+        <view class="number-reduce number-item">
+            <image class="control-image" src="../../image/Button/reduce_btn.png" bindtap="minusButton" ></image>
+        </view>
+        <view class="number-item">{{coverNumber}}</view>
+        <view class="number-increase number-item" bindtap="addButton" >
+            <image class="control-image" src="../../image/Button/add_btn.png"></image>
+        </view>
+    </view>
+</view>
+<view class="config-container">
+    <toast hidden="{{toastHidden}}" bindchange="toastChange">
+        {{toastMessage}}
+    </toast>
+  <view class="config-title">共{{count}}人</view>
+  <view class="config-area">
+
+    <view wx:for="{{roleList}}" wx:for-item="role" class="role-area" bindtap="changeNumber" data-value="{{role.id}}">
+        <view class="image-area">
+            <image class="{{role.flag ? 'image-choose': 'image-icon'}}" src="{{imagePath}}{{role.url}}"></image>
+            <view class="image-number" wx:if="{{role.number>0}}">{{role.number}}</view>
+        </view>
+        <view>
+            <text>{{role.name}}</text>
+        </view>
+    </view>
+  </view>
+  <view class="play-button" bindtap="playGame">
+      <image src="../../image/Button/play_btn.png" class="play-image"></image>
+  </view>
+</view>
